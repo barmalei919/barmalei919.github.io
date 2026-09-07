@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Данила Капацын — Java Backend Developer</title>
+<style>
+  @page{size:A4;margin:11mm 12mm;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif;font-size:9.6pt;line-height:1.45;color:#1d2126;background:#fff;}
+  a{color:#1a5c2e;text-decoration:none;}
+
+  .head{border-bottom:2px solid #1d2126;padding-bottom:7pt;margin-bottom:10pt;}
+  .name{font-size:21pt;font-weight:700;letter-spacing:-.4pt;line-height:1.1;}
+  .role{font-size:11.5pt;color:#2e7d3f;font-weight:600;margin-top:2pt;}
+  .contacts{margin-top:6pt;font-size:9pt;color:#3c434b;display:flex;flex-wrap:wrap;gap:4pt 14pt;}
+  .contacts b{font-weight:600;color:#1d2126;}
+
+  h2{font-size:9.5pt;font-weight:700;text-transform:uppercase;letter-spacing:1.3pt;color:#2e7d3f;
+     margin:12pt 0 6pt;padding-bottom:2.5pt;border-bottom:1px solid #d7dce1;}
+  section{break-inside:auto;}
+
+  .summary{color:#31383f;text-align:justify;}
+
+  .skills{display:grid;grid-template-columns:118pt 1fr;gap:3.5pt 10pt;}
+  .skills dt{font-weight:600;color:#3c434b;}
+  .skills dd{color:#31383f;}
+
+  .job{margin-bottom:10pt;break-inside:avoid;}
+  .job:last-child{margin-bottom:0;}
+  .job-top{display:flex;justify-content:space-between;align-items:baseline;gap:10pt;}
+  .job-title{font-size:10.5pt;font-weight:700;color:#12161a;}
+  .job-date{font-size:8.6pt;color:#5a626b;white-space:nowrap;font-weight:600;}
+  .job-meta{font-size:9pt;color:#5a626b;margin:1pt 0 4pt;font-style:italic;}
+  ul{list-style:none;}
+  li{position:relative;padding-left:10pt;margin-bottom:2.6pt;color:#2b3138;text-align:justify;}
+  li::before{content:"–";position:absolute;left:0;color:#2e7d3f;font-weight:700;}
+  li b{font-weight:600;color:#12161a;}
+  .stack{font-size:8.7pt;color:#5a626b;margin-top:3.5pt;padding-top:3pt;border-top:1px dotted #d7dce1;}
+  .stack b{color:#3c434b;font-weight:600;}
+
+  .proj{margin-bottom:7pt;break-inside:avoid;}
+  .proj-name{font-weight:700;font-size:9.9pt;color:#12161a;}
+  .proj-name span{font-weight:400;font-size:8.6pt;color:#2e7d3f;}
+  .proj p{color:#2b3138;margin-top:1pt;text-align:justify;}
+
+  .edu-top{display:flex;justify-content:space-between;align-items:baseline;gap:10pt;}
+  .edu-name{font-weight:700;font-size:10pt;color:#12161a;}
+  .edu-sub{color:#3c434b;margin-top:1pt;}
+  .extra{display:grid;grid-template-columns:118pt 1fr;gap:3.5pt 10pt;}
+  .extra dt{font-weight:600;color:#3c434b;}
+  .extra dd{color:#31383f;}
+</style>
+</head>
+<body>
+
+<header class="head">
+  <div class="name">Данила Капацын</div>
+  <div class="role">Java Backend Developer</div>
+  <div class="contacts">
+    <span><b>Telegram:</b> <a href="https://t.me/hvticker">@hvticker</a></span>
+    <span><b>Email:</b> <a href="mailto:danilakapacyn@gmail.com">danilakapacyn@gmail.com</a></span>
+    <span><b>GitHub:</b> <a href="https://github.com/barmalei919">github.com/barmalei919</a></span>
+    <span><b>Город:</b> Воронеж · удалённо / гибрид</span>
+  </div>
+</header>
+
+<section>
+  <h2>О себе</h2>
+  <p class="summary">Java-разработчик с 2 годами опыта backend-разработки и 3+ годами самостоятельной практики.
+  Работаю со Spring Boot, PostgreSQL и Redis: пишу REST API, разбираю медленные запросы и слой доступа к данным,
+  покрываю код юнит- и интеграционными тестами, снимаю метрики через Micrometer и Grafana.
+  Ищу позицию Java Backend Developer в команде, где есть код-ревью и наставник, у которого можно учиться.</p>
+</section>
+
+<section>
+  <h2>Ключевые навыки</h2>
+  <dl class="skills">
+    <dt>Языки</dt><dd>Java 17/21, SQL, Lua (скрипты Redis)</dd>
+    <dt>Фреймворки</dt><dd>Spring Boot 3/4, Spring MVC, Spring Data JPA, Spring Security, Hibernate</dd>
+    <dt>Хранилища</dt><dd>PostgreSQL, Redis; схемы и индексы, разбор медленных запросов, миграции через Flyway</dd>
+    <dt>Тестирование</dt><dd>JUnit 5, Mockito, Testcontainers, интеграционные тесты, нагрузочное тестирование (k6)</dd>
+    <dt>Инфраструктура</dt><dd>Docker, Docker Compose, Git; Prometheus, Grafana, Micrometer</dd>
+    <dt>API и практики</dt><dd>REST, OpenAPI/Swagger, JWT, RBAC, код-ревью, Agile/Scrum</dd>
+    <dt>Знаком</dt><dd>Apache Kafka, GitLab CI — использовал в пет-проектах, без продакшен-опыта</dd>
+  </dl>
+</section>
+
+<section>
+  <h2>Опыт работы</h2>
+
+  <div class="job">
+    <div class="job-top">
+      <div class="job-title">Java Backend Developer</div>
+      <div class="job-date">Июль 2025 — Июнь 2026</div>
+    </div>
+    <div class="job-meta">Продуктовая команда — backend-сервис заказов</div>
+    <ul>
+      <li>Разрабатывал <b>REST API</b> на Spring Boot: контроллеры, сервисный слой, DTO и валидация запросов, единый формат ошибок через <code>@RestControllerAdvice</code>, документация в <b>Swagger</b>.</li>
+      <li>Работал с PostgreSQL через <b>Spring Data JPA</b>: писал запросы и разбирал медленные. Основной случай — <b>N+1</b> на списке заказов: заменил на fetch join и <code>@EntityGraph</code>, добавил индексы под частые выборки, время ответа тяжёлых эндпоинтов сократилось примерно втрое.</li>
+      <li>Подключил кэширование справочников в <b>Redis</b>, чтобы не ходить в базу за одними и теми же данными на каждый запрос; настраивал TTL и сброс кэша при обновлении записей.</li>
+      <li>Покрывал код тестами: <b>JUnit 5</b> и Mockito на сервисный слой, интеграционные тесты на <b>Testcontainers</b> с реальным PostgreSQL вместо H2.</li>
+      <li>Собрал дашборд в <b>Grafana</b> по метрикам Micrometer и Prometheus: время ответа и доля ошибок по эндпоинтам.</li>
+      <li>Вёл схему базы через <b>Flyway</b>, писал миграции под новые поля и таблицы.</li>
+      <li>Разбирал баги с продакшена по логам, закрывал их регрессионными тестами.</li>
+    </ul>
+    <div class="stack"><b>Стек:</b> Java 17, Spring Boot 3, Spring Data JPA, PostgreSQL, Redis, Flyway, JUnit 5, Testcontainers, Docker, Prometheus, Grafana</div>
+  </div>
+
+  <div class="job">
+    <div class="job-top">
+      <div class="job-title">Java Developer</div>
+      <div class="job-date">Июль 2024 — Июнь 2025</div>
+    </div>
+    <div class="job-meta">Аутсорс-разработка — REST API и интеграции для клиентских проектов</div>
+    <ul>
+      <li>Писал <b>CRUD REST API</b> на Spring Boot под задачи клиентских проектов: сущности, репозитории, валидация, документация в <b>Swagger UI</b>.</li>
+      <li>Делал аутентификацию на <b>Spring Security</b>: <b>JWT</b> с парой access/refresh, роли USER и ADMIN, ограничение доступа к эндпоинтам.</li>
+      <li>Подключал внешние сервисы — платёжный шлюз и SMS-провайдера: настраивал таймауты и повторные попытки, обрабатывал коды ошибок.</li>
+      <li>Участвовал в обновлении проекта до <b>Spring Boot 3</b>: поднимал зависимости, чинил то, что отвалилось после переезда на Jakarta.</li>
+      <li>Перевёл схемы БД на <b>Flyway</b> и собрал локальное окружение на <b>Docker Compose</b> — проект поднимался одной командой.</li>
+      <li>Правил баги по обращениям и логам, писал тесты на найденные дефекты.</li>
+    </ul>
+    <div class="stack"><b>Стек:</b> Java 17, Spring Boot, Spring Security, JWT, PostgreSQL, Hibernate, Flyway, Docker, JUnit 5, Swagger</div>
+  </div>
+</section>
+
+<section>
+  <h2>Проекты</h2>
+
+  <div class="proj">
+    <div class="proj-name">Redis Rate Limiter <span>· github.com/barmalei919/redis-rate-limiter</span></div>
+    <p>HTTP rate limiter с двумя алгоритмами — sliding window (ZSET) и token bucket (HASH) — на атомарных Lua-скриптах в Redis.
+    Fail-open при недоступности Redis, метрики Micrometer → Prometheus → Grafana, нагрузочные сценарии на k6, интеграционные тесты на Testcontainers.
+    <br><b>Стек:</b> Java 17, Spring Boot 4, Redis 7, Lua, Prometheus, Grafana, k6, Testcontainers.</p>
+  </div>
+
+  <div class="proj">
+    <div class="proj-name">Bus Ticket Reservation System <span>· github.com/barmalei919/ticket-reservation</span></div>
+    <p>REST API онлайн-бронирования автобусных билетов: JWT-аутентификация с access/refresh, RBAC с ролями USER/ADMIN,
+    поиск рейсов, бронирование мест с защитой от гонок, оплата и отмена. Миграции через Flyway, документация в Swagger UI, запуск в Docker.
+    <br><b>Стек:</b> Java 17, Spring Boot 3, Spring Security, PostgreSQL, Hibernate, Flyway, Docker.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Образование</h2>
+  <div class="edu-top">
+    <div class="edu-name">Воронежский государственный технический университет</div>
+    <div class="job-date">2023 — 2027</div>
+  </div>
+  <div class="edu-sub">Прикладная информатика, бакалавриат (4 курс). Последние два года учёбу совмещаю с работой над backend-проектами.</div>
+</section>
+
+<section>
+  <h2>Дополнительно</h2>
+  <dl class="extra">
+    <dt>Английский</dt><dd>B1–B2 — свободно читаю техническую документацию и исходники</dd>
+    <dt>Формат работы</dt><dd>Удалённо, гибрид или офис (Воронеж); готов к релокации</dd>
+    <dt>Готовность</dt><dd>Готов выполнить тестовое задание; к работе могу приступить сразу</dd>
+  </dl>
+</section>
+
+</body>
+</html>

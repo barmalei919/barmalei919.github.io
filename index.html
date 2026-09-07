@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Данила Капацын — Java Backend Developer</title>
+  <meta name="description" content="Java Backend Developer. Spring Boot, PostgreSQL, Redis, Testcontainers. 2 года опыта backend-разработки.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" media="print" onload="this.media='all';this.onload=null"
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap">
+  </noscript>
+  <script data-goatcounter="https://danila-cv.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <div class="bg-grid"></div>
+
+  <div class="wrap">
+    <section class="hero">
+      <div class="hero-row">
+        <div class="hero-text">
+          <div class="badge reveal">Java Backend Developer</div>
+          <h1 class="reveal d1">Данила <span>Капацын</span></h1>
+          <div class="terminal reveal d2" id="terminal"><span class="cursor"></span></div>
+          <p class="hero-lead reveal d2">Пишу backend на Java и Spring Boot: проектирую API, держу данные консистентными и разбираюсь, почему запрос идёт две секунды вместо двухсот миллисекунд.</p>
+          <div class="cta-row reveal d3">
+            <a class="btn btn-primary" href="https://t.me/hvticker" target="_blank" rel="noopener">Написать в Telegram</a>
+            <a class="btn btn-secondary" href="https://github.com/barmalei919" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn-cv" href="files/danila-kapacyn-cv.pdf" download>
+              <span class="cv-name">Резюме</span><span class="cv-ext">.pdf</span><span class="cv-arrow">↓</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-card reveal d2" aria-hidden="true">
+          <div class="hc-bar">
+            <span class="hc-dot"></span><span class="hc-dot"></span><span class="hc-dot"></span>
+            <em>OrderService.java</em>
+          </div>
+<pre class="hc-code"><span class="c-an">@Transactional</span>(readOnly = <span class="c-kw">true</span>)
+<span class="c-kw">public</span> Page&lt;OrderDto&gt; <span class="c-fn">findByUser</span>(Long userId, Pageable page) {
+    <span class="c-cm">// @EntityGraph — иначе N+1 на позициях заказа</span>
+    <span class="c-kw">return</span> orderRepo.findByUserId(userId, page)
+        .map(orderMapper::toDto);
+}</pre>
+        </div>
+      </div>
+      <div class="scroll-hint">scroll ↓</div>
+    </section>
+
+    <hr class="divider">
+
+    <section class="section">
+      <div class="section-mark reveal"><span class="sm-num">01</span><span class="sm-line"></span><span class="sm-name">About</span></div>
+      <h2 class="reveal d1">О себе</h2>
+      <div class="about-grid">
+        <div class="stat-card reveal d1">
+          <div class="num">2</div>
+          <div class="label">года разработки на Java</div>
+        </div>
+        <div class="stat-card reveal d2">
+          <div class="num">3+</div>
+          <div class="label">года самостоятельной разработки</div>
+        </div>
+        <div class="stat-card about-text reveal d3">
+          <p>Java-разработчик, backend. Работаю со Spring Boot, PostgreSQL и Redis: проектирую REST API, разбираю медленные запросы, покрываю код тестами и вешаю на сервисы метрики, чтобы проблема была видна раньше, чем о ней напишет поддержка.</p>
+          <p>Считаю, что задача не закончена, пока к ней нет интеграционных тестов. Отдельно интересно, как сервис ведёт себя под нагрузкой и что с ним происходит, когда отказывает соседний компонент.</p>
+        </div>
+      </div>
+      <div class="skills-wrap reveal">
+        <div class="skills-group">
+          <div class="skills-label">Основное</div>
+          <div class="skills-row">
+            <span class="skill">Java 17/21</span>
+            <span class="skill">Spring Boot 3/4</span>
+            <span class="skill">Spring Security</span>
+            <span class="skill">Spring Data JPA</span>
+            <span class="skill">Hibernate</span>
+            <span class="skill">PostgreSQL</span>
+            <span class="skill">Redis</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <div class="skills-label">Инфраструктура и качество</div>
+          <div class="skills-row">
+            <span class="skill">Docker</span>
+            <span class="skill">Docker Compose</span>
+            <span class="skill">GitLab CI</span>
+            <span class="skill">Flyway</span>
+            <span class="skill">JUnit 5</span>
+            <span class="skill">Testcontainers</span>
+            <span class="skill">Prometheus</span>
+            <span class="skill">Grafana</span>
+            <span class="skill">k6</span>
+            <span class="skill">OpenAPI / Swagger</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <div class="skills-label">Знаком, использовал в пет-проектах</div>
+          <div class="skills-row">
+            <span class="skill skill-soft">Apache Kafka</span>
+            <span class="skill skill-soft">Lua (скрипты Redis)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section class="section">
+      <div class="section-mark reveal"><span class="sm-num">02</span><span class="sm-line"></span><span class="sm-name">Experience</span></div>
+      <h2 class="reveal d1">Опыт работы</h2>
+      <div class="exp-list">
+
+        <div class="exp-card reveal d1">
+          <div class="exp-side">
+            <div class="exp-period">Июль 2025 — Июнь 2026</div>
+            <div class="exp-duration">1 год</div>
+            <div class="exp-type">Java Backend Developer<br><span>контракт · продуктовая команда</span></div>
+          </div>
+          <div class="exp-main">
+            <div class="exp-role">Backend-сервис заказов</div>
+            <ul class="exp-bullets">
+              <li>Разрабатывал <b>REST API</b> на Spring Boot: контроллеры, сервисный слой, DTO и валидация запросов, единый формат ошибок через <code>@RestControllerAdvice</code>, документация в <b>Swagger</b>.</li>
+              <li>Работал с PostgreSQL через <b>Spring Data JPA</b>: писал запросы и разбирал медленные. Основной случай — <b>N+1</b> на списке заказов: заменил на fetch join и <code>@EntityGraph</code>, добавил индексы под частые выборки, время ответа тяжёлых эндпоинтов упало примерно втрое.</li>
+              <li>Подключил кэш справочников в <b>Redis</b>, чтобы не ходить в базу за одними и теми же данными на каждый запрос. Разбирался с TTL и сбросом кэша при обновлении записей.</li>
+              <li>Покрывал код тестами: <b>JUnit 5</b> и Mockito на сервисный слой, интеграционные тесты на <b>Testcontainers</b> с реальным PostgreSQL вместо H2.</li>
+              <li>Собрал в <b>Grafana</b> дашборд по метрикам Micrometer и Prometheus: время ответа и доля ошибок по эндпоинтам — стало видно, какие ручки проседают.</li>
+              <li>Вёл схему базы через <b>Flyway</b>, писал миграции под новые поля и таблицы.</li>
+              <li>Разбирал баги с продакшена по логам и закрывал их регрессионными тестами.</li>
+            </ul>
+            <div class="exp-stack">
+              <span class="tag">Java 17</span><span class="tag">Spring Boot 3</span><span class="tag">Spring Data JPA</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">Flyway</span><span class="tag">JUnit 5</span><span class="tag">Testcontainers</span><span class="tag">Docker</span><span class="tag">Prometheus</span><span class="tag">Grafana</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-card reveal d2">
+          <div class="exp-side">
+            <div class="exp-period">Июль 2024 — Июнь 2025</div>
+            <div class="exp-duration">1 год</div>
+            <div class="exp-type">Java Developer<br><span>аутсорс-разработка</span></div>
+          </div>
+          <div class="exp-main">
+            <div class="exp-role">REST API и интеграции для клиентских проектов</div>
+            <ul class="exp-bullets">
+              <li>Писал <b>CRUD REST API</b> на Spring Boot под задачи клиентских проектов: сущности, репозитории, валидация, документация в <b>Swagger UI</b>.</li>
+              <li>Делал аутентификацию на <b>Spring Security</b>: <b>JWT</b> с парой access/refresh, роли USER и ADMIN, ограничение доступа к эндпоинтам.</li>
+              <li>Подключал внешние сервисы — платёжный шлюз и SMS-провайдера: настраивал таймауты и повторные попытки, обрабатывал ответы и коды ошибок.</li>
+              <li>Участвовал в обновлении проекта до <b>Spring Boot 3</b>: поднимал зависимости, чинил то, что отвалилось после переезда на Jakarta.</li>
+              <li>Перевёл схемы БД на <b>Flyway</b> и собрал локальное окружение на <b>Docker Compose</b> — проект поднимался одной командой.</li>
+              <li>Правил баги по обращениям и логам, писал тесты на найденные дефекты.</li>
+            </ul>
+            <div class="exp-stack">
+              <span class="tag">Java 17</span><span class="tag">Spring Boot</span><span class="tag">Spring Security</span><span class="tag">JWT</span><span class="tag">PostgreSQL</span><span class="tag">Hibernate</span><span class="tag">Flyway</span><span class="tag">Docker</span><span class="tag">JUnit 5</span><span class="tag">Swagger</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section class="section">
+      <div class="section-mark reveal"><span class="sm-num">03</span><span class="sm-line"></span><span class="sm-name">Projects</span></div>
+      <h2 class="reveal d1">Проекты</h2>
+      <p class="section-lead reveal d1">Пет-проекты, доведённые до прод-уровня: тесты, метрики, документация, воспроизводимый запуск.</p>
+      <div class="projects">
+        <a class="project-card reveal d1" href="https://github.com/barmalei919/redis-rate-limiter" target="_blank" rel="noopener">
+          <div class="project-shot">
+            <img src="images/project-rate-limiter.png" alt="Redis Rate Limiter — дашборд Grafana"
+                 width="1139" height="433" loading="lazy" decoding="async"
+                 onerror="this.parentElement.classList.add('no-shot');this.remove();">
+            <div class="shot-fallback">redis-rate-limiter</div>
+            <div class="shot-overlay"><span>открыть на github →</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-header">
+              <div class="project-title">Redis Rate Limiter</div>
+              <span class="project-link">→ github</span>
+            </div>
+            <div class="project-desc">HTTP rate limiter с двумя алгоритмами — sliding window (ZSET) и token bucket (HASH) — на атомарных Lua-скриптах в Redis. Fail-open при недоступности Redis, метрики Micrometer → Prometheus → Grafana, нагрузочные сценарии на k6, интеграционные тесты на Testcontainers.</div>
+            <div class="project-stack">
+              <span class="tag">Java 17</span><span class="tag">Spring Boot 4</span><span class="tag">Redis 7</span><span class="tag">Lua</span><span class="tag">Prometheus</span><span class="tag">Grafana</span><span class="tag">k6</span><span class="tag">Testcontainers</span>
+            </div>
+          </div>
+        </a>
+        <a class="project-card reveal d2" href="https://github.com/barmalei919/ticket-reservation" target="_blank" rel="noopener">
+          <div class="project-shot">
+            <img src="images/project-tickets.jpg" alt="Bus Ticket Reservation System — интерфейс поиска рейсов"
+                 width="1200" height="622" loading="lazy" decoding="async"
+                 onerror="this.parentElement.classList.add('no-shot');this.remove();">
+            <div class="shot-fallback">ticket-reservation</div>
+            <div class="shot-overlay"><span>открыть на github →</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-header">
+              <div class="project-title">Bus Ticket Reservation System</div>
+              <span class="project-link">→ github</span>
+            </div>
+            <div class="project-desc">REST API онлайн-бронирования билетов. JWT-аутентификация с access/refresh, RBAC с ролями USER/ADMIN, поиск рейсов, бронирование мест с защитой от гонок, оплата и отмена. Миграции через Flyway, документация в Swagger UI, запуск в Docker.</div>
+            <div class="project-stack">
+              <span class="tag">Java 17</span><span class="tag">Spring Boot 3</span><span class="tag">Spring Security</span><span class="tag">PostgreSQL</span><span class="tag">Hibernate</span><span class="tag">Flyway</span><span class="tag">Docker</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section class="section">
+      <div class="section-mark reveal"><span class="sm-num">04</span><span class="sm-line"></span><span class="sm-name">Approach</span></div>
+      <h2 class="reveal d1">Как я работаю</h2>
+      <div class="principles">
+        <div class="principle reveal d1">
+          <div class="p-num">01</div>
+          <div class="p-title">Сначала разобраться</div>
+          <div class="p-text">Прежде чем писать код, выясняю, как ляжет модель данных и что вернёт ручка. Полчаса вопросов дешевле, чем переделанная задача.</div>
+        </div>
+        <div class="principle reveal d1">
+          <div class="p-num">02</div>
+          <div class="p-title">Измеряю, а не угадываю</div>
+          <div class="p-text">Прежде чем оптимизировать — профилирую и смотрю план запроса. Оптимизация без цифр «до» и «после» не считается сделанной.</div>
+        </div>
+        <div class="principle reveal d2">
+          <div class="p-num">03</div>
+          <div class="p-title">Отказ — штатный режим</div>
+          <div class="p-text">Внешний сервис упадёт, сеть моргнёт, запрос придёт повторно. Таймауты и обработку ошибок закладываю сразу, а не после первого инцидента.</div>
+        </div>
+        <div class="principle reveal d2">
+          <div class="p-num">04</div>
+          <div class="p-title">Готово — значит наблюдаемо</div>
+          <div class="p-text">Фича закрыта, когда есть интеграционные тесты, метрики и понятные логи. Иначе о проблеме первым узнаёт пользователь.</div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section class="section">
+      <div class="section-mark reveal"><span class="sm-num">05</span><span class="sm-line"></span><span class="sm-name">Education</span></div>
+      <h2 class="reveal d1">Образование</h2>
+      <div class="edu-card reveal d1">
+        <div class="edu-side">
+          <div class="edu-period">2023 — 2027</div>
+          <div class="edu-duration">4 курс</div>
+        </div>
+        <div class="edu-main">
+          <div class="edu-degree">Воронежский государственный технический университет</div>
+          <div class="edu-field">Прикладная информатика, бакалавриат</div>
+          <div class="edu-note">Алгоритмы и структуры данных, базы данных, сети, проектирование ПО. Последние два года учёбу совмещаю с работой над backend-проектами.</div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section class="section">
+      <div class="section-mark reveal"><span class="sm-num">06</span><span class="sm-line"></span><span class="sm-name">Contact</span></div>
+      <h2 class="reveal d1">Контакты</h2>
+      <p class="section-lead reveal d1">Открыт к предложениям на позицию Java Backend Developer. Отвечаю в течение дня.</p>
+      <div class="contacts">
+        <a class="contact-item reveal d1" href="https://t.me/hvticker" target="_blank" rel="noopener">
+          <div class="icon">tg</div>@hvticker
+        </a>
+        <a class="contact-item reveal d2" href="mailto:danilakapacyn@gmail.com">
+          <div class="icon">@</div>danilakapacyn@gmail.com
+        </a>
+        <a class="contact-item reveal d3" href="https://github.com/barmalei919" target="_blank" rel="noopener">
+          <div class="icon">gh</div>github.com/barmalei919
+        </a>
+      </div>
+    </section>
+
+    <footer>© 2026 · <span>Данила Капацын</span> · Java Backend Developer</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
